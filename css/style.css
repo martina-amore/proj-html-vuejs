@@ -1,0 +1,110 @@
+/* GENERALI */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .debug {
+    border: 1px solid white;
+} */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    background-image: url("../img/avada-nightclub-home-hero.jpg");
+    background-size: cover;
+}
+
+.top-navbar {
+    height: 120px;
+    text-align: center;
+}
+
+.top-navbar.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-navbar ul {
+    list-style-type: none;
+}
+
+.left-navbar li, .right-navbar li {
+    display: inline-flex;
+}
+
+.left-navbar li:not(:last-of-type) {
+    margin-right: 80px;
+}
+
+.right-navbar li:not(:first-of-type) {
+    margin-left: 80px;
+}
+
+.top-navbar li a {
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.top-navbar img {
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+.top-hero {
+    text-align: center;
+}
+
+.top-hero .top-image img {
+    width: 80%;
+    padding-top: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.box-bottom {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.memories-text {
+    border-top: 3px solid #4da4dd;
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 60px;
+    position: relative;
+}
+
+.button {
+    margin: 0 auto;
+    width: 190px;
+    padding: 12px 24px;
+    color: white;
+    background-color: #f53c81;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.box-bottom .button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top-hero .bottom-image img {
+    margin-top: 70px;
+    width: 210px;
+}
