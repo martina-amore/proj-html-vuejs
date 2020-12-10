@@ -199,9 +199,36 @@ header {
 .text-underline {
     color: white;
     position: absolute;
-    bottom: 5%;
-    left: 20%;
-    transform: translate(-50%, -50%);
+    bottom: 8%;
+    left: 7%;
     z-index: 2;
     font-weight: 600;
 }
+
+.line {
+    position: absolute;
+    bottom: 12.5%;
+    right: 0;
+}
+
+.one {
+    width: 346px;
+    border-top: 1px solid #4da4dd;
+}
+
+.two {
+    width: 376px;
+    border-top: 1px solid #f53c81;
+}
+
+.three {
+    width: 386px;
+    border-top: 1px solid #f1ba2d;
+}
+
+.four {
+    width: 383px;
+    border-top: 1px solid #f53c81;
+}
+
+/* 2° SEZIONE RESIDENT-GUEST */
