@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -25,7 +25,7 @@ header {
 }
 
 .top-navbar {
-    padding-top: 30px;
+    padding-top: 80px;
     height: 120px;
     text-align: center;
 }
@@ -45,22 +45,23 @@ header {
 }
 
 .left-navbar li:not(:last-of-type) {
-    margin-right: 80px;
+    margin-right: 90px;
 }
 
 .right-navbar li:not(:first-of-type) {
-    margin-left: 80px;
+    margin-left: 85px;
 }
 
 .top-navbar li a {
     text-decoration: none;
     font-weight: 700;
+    font-size: 18px;
     color: white;
     letter-spacing: 2px;
 }
 
 .top-navbar img {
-    width: 300px;
+    width: 400px;
     margin-bottom: 15px;
 }
 
@@ -72,16 +73,17 @@ header {
 }
 
 .demos, .on-sale {
-    width: 55px;
-    height: 55px;
-    border-radius: 5px;
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
     background-color: #fefdfe;
     position: relative;
     color: #33475b;
 }
 
 .demos {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    margin-top: 70px;
 }
 
 .icon-text {
@@ -100,7 +102,7 @@ header {
 }
 
 .top-hero .top-image img {
-    width: 80%;
+    width: 100%;
     padding-top: 150px;
     display: block;
     margin: 0 auto;
@@ -112,22 +114,30 @@ header {
 }
 
 .memories-text {
-    border-top: 5px solid #4da4dd;
+    border-top: 7px solid #46b1fd;
     color: white;
     font-weight: 700;
-    font-size: 40px;
-    padding: 60px;
+    font-size: 56px;
+    padding: 100px;
     position: relative;
 }
 
 .button {
-    margin: 0 auto;
-    width: 210px;
-    padding: 12px 24px;
-    color: white;
-    background-color: #f53c81;
-    font-weight: 800;
+    font-size: 24px;
+    font-weight: 700;
     letter-spacing: 2px;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+.button.vip {
+    margin: 0 auto;
+    width: 280px;
+    background-color: #f53c81;
+    padding: 18px 40px;
 }
 
 .box-bottom .button {
@@ -137,9 +147,9 @@ header {
 }
 
 .top-hero .bottom-image img {
-    margin-top: 70px;
+    margin-top: 100px;
     margin-bottom: 50px;
-    width: 250px;
+    width: 380px;
 }
 
 /* 1° SEZIONE WELCOME */
@@ -153,30 +163,34 @@ header {
 }
 
 .welcome-box-text-images {
-    padding-top: 200px;
+    padding-top: 300px;
     text-align: center;
-    padding-bottom: 200px;
+    padding-bottom: 350px;
+}
+
+h4 {
+    font-size: 26px;
+    letter-spacing: 2px;
 }
 
 .welcome-box-text-images h4 {
-    color: #4da4dd;
-    letter-spacing: 2px;
+    color: #46b1fd;
 }
 
 .welcome-box-text-images h1 {
     color: white;
     font-weight: 500;
-    font-size: 48px;
+    font-size: 70px;
 }
 
 .welcome-box-text-images p {
-    width: 55%;
+    width: 75%;
     margin: 0 auto;
     margin-top: 15px;
     margin-bottom: 80px;
-    font-size: 13px;
+    font-size: 18px;
     font-family: 'Open Sans', sans-serif;
-    line-height: 24px;
+    line-height: 32px;
     color: #8a95a0;
 }
 
@@ -188,7 +202,7 @@ header {
 }
 
 .welcome-images img {
-    width: 560px;
+    width: 700px;
     margin-top: -7px;
 }
 
@@ -203,6 +217,7 @@ header {
     left: 7%;
     z-index: 2;
     font-weight: 600;
+    font-size: 30px;
 }
 
 .line {
@@ -211,24 +226,88 @@ header {
     right: 0;
 }
 
-.one {
-    width: 346px;
-    border-top: 1px solid #4da4dd;
+.line.one {
+    width: 431px;
+    border-top: 1px solid #46b1fd;
 }
 
-.two {
-    width: 376px;
+.line.two {
+    width: 469px;
     border-top: 1px solid #f53c81;
 }
 
-.three {
-    width: 386px;
+.line.three {
+    width: 483px;
     border-top: 1px solid #f1ba2d;
 }
 
-.four {
-    width: 383px;
+.line.four {
+    width: 480px;
     border-top: 1px solid #f53c81;
 }
 
 /* 2° SEZIONE RESIDENT-GUEST */
+#resident-guest {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+#resident-guest .photo {
+    height: 830px;
+    width: 50%;
+    position: relative;
+}
+
+.dj-avada {
+    background-image: url("../img/avada-nightclub-resident-profile.jpg");
+    background-position: center;
+    border-top: 7px solid #f53c81;
+}
+
+.middle-opacity {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+}
+
+.dj-blondie {
+    background-image: url("../img/avada-nightclub-lisahouse-inset-new.jpg");
+    border-top: 7px solid #46b1fd;
+}
+
+.dj-text-button {
+    position: absolute;
+    top: 8%;
+    left: 6%;
+}
+
+.dj-text-button h1 {
+    color: white;
+    font-weight: 500;
+    font-size: 70px;
+}
+
+.dj-avada h4 {
+    color: #f53c81;
+}
+
+.dj-blondie h4 {
+    color: #46b1fd;
+}
+
+.dj-text-button .button {
+    text-align: center;
+    padding: 15px 30px;
+    width: 220px;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.avada {
+    background-color: #46b1fd;
+}
+
+.blondie {
+    background-color: #f53c81;
+}
