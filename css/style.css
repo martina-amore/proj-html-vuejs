@@ -32,6 +32,11 @@ ul {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /* HEADER */
 header {
     background-image: url("../img/avada-nightclub-home-hero.jpg");
@@ -63,7 +68,6 @@ header {
 }
 
 .top-navbar li a {
-    text-decoration: none;
     font-weight: 700;
     font-size: 14px;
     color: white;
@@ -87,6 +91,7 @@ header {
 }
 
 .demos, .on-sale {
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     width: 65px;
     height: 65px;
@@ -98,7 +103,7 @@ header {
     z-index: 3;
 }
 
-.demos {
+.on-sale {
     margin-bottom: 8px;
     margin-top: 70px;
 }
@@ -108,6 +113,20 @@ header {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+sup {
+    font-size: 16px;
+}
+
+.price {
+    color: #65bc7b;
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.icon-text h5 {
+    font-size: 11.2px;
 }
 
 .fas {
@@ -144,12 +163,6 @@ header {
     font-weight: 700;
     letter-spacing: 2px;
     transition: 0.3s;
-    cursor: pointer;
-}
-
-.button a {
-    text-decoration: none;
-    color: white;
 }
 
 .button.vip {
@@ -407,6 +420,7 @@ header {
     margin-top: 10px;
     text-align: center;
     margin-left: 170px;
+    color: white;
 }
 
 /* FOOTER */
@@ -432,7 +446,6 @@ footer h6 {
 
 footer h4 a {
     letter-spacing: 0;
-    text-decoration: none;
     color: #46b1fd;
     font-size: 23px;
     font-weight: 600;
@@ -469,7 +482,6 @@ footer h4 a:hover {
 }
 
 .address-center a {
-    text-decoration: none;
     color: #46b1fd;
     transition: 0.3s;
 }
@@ -500,23 +512,33 @@ footer h4 a:hover {
 }
 
 .disclaimer a {
-    text-decoration: none;
     color: #546051;
     transition: 0.3s;
 }
 
 .disclaimer a:hover {
-    text-decoration: none;
     color: #f53c81;
 }
 
 .button-up {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     position: fixed;
-    color: #33475b;
-    bottom: 40px;
-    right: 40px;
+    bottom: 30px;
+    right: 75px;
     z-index: 3;
-    background-color: rgba(50, 50, 50, 0.5);
+    background-color: #2f2f30;
+    opacity: 0.9;
+    line-height: 45px;
+    text-align: center;
+    transition: 0.3s;
+    color: #e1e1e2
+}
+
+.button-up:hover {
+    background-color: #f53c81;
+}
+
+.fa-chevron-up {
+    font-size: 0.9rem;
 }
