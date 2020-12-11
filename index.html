@@ -17,17 +17,17 @@
         <div class="root debug">
             <header>
                 <div class="container">
-                    <div class="top-navbar debug flex">
-                        <ul class="left-navbar debug flex">
-                            <li><a href="#">HOME</a></li>
-                            <li><a href="#">THE CLUB</a></li>
-                            <li><a href="#">EVENTS</a></li>
+                    <div class="top-navbar flex">
+                        <ul class="left-navbar flex">
+                            <li v-for="link in linkLeft">
+                                <a href="#">{{link}}</a>
+                            </li>
                         </ul>
                         <img src="img/avada-nightclub-logo.png" alt="Night Club Avada logo">
-                        <ul class="right-navbar debug flex">
-                            <li><a href="#">JOBS</a></li>
-                            <li><a href="#">NEWS</a></li>
-                            <li><a href="#">CONTACT US</a></li>
+                        <ul class="right-navbar flex">
+                            <li v-for="link in linkRight">
+                                <a href="#">{{link}}</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="right-buttons">
@@ -45,7 +45,7 @@
                         </div>
                     </div>
                     <!-- HEADER HERO -->
-                    <div class="top-hero debug">
+                    <div class="top-hero">
                         <div class="hero-image-text">
                             <div class="top-image">
                                 <img src="img/avada-nightclub-homepage-image.png" alt="NightClub image">
@@ -128,14 +128,116 @@
                         </div>
                     </div>
                 </section>
+                <!-- 3° SEZIONE SPECIAL-EVENTS -->
                 <section id="special-events">
-
+                    <div class="middle-opacity">
+                        <div class="container">
+                            <h4>SPECIAL EVENTS</h4>
+                            <h1>for your diary</h1>
+                            <div class="events-images">
+                                <span class="events-image-text">
+                                    <img src="img/avada-nightclub-events-6.jpg" alt="Nightclub event image">
+                                    <div class="events-text">
+                                        <h4>DJ Fusion</h4>
+                                        <h5>August 19, 2021 @ 8:00 am</h5>
+                                    </div>
+                                </span>
+                                <span class="events-image-text">
+                                    <img src="img/avada-nightclub-events-5.jpg" alt="Nightclub event image">
+                                    <div class="events-text">
+                                        <h4>House Nation</h4>
+                                        <h5>August 19, 2021 @ 8:00 am</h5>
+                                    </div>
+                                </span>
+                                <span class="events-image-text">
+                                    <img src="img/avada-nightclub-events-4.jpg" alt="Nightclub event image">
+                                    <div class="events-text">
+                                        <h4>Jazz Night</h4>
+                                        <h5>August 19, 2021 @ 8:00 am</h5>
+                                    </div>
+                                </span>
+                                <span class="events-image-text">
+                                    <img src="img/avada-nightclub-events-3.jpg" alt="Nightclub event image">
+                                    <div class="events-text">
+                                        <h4>VIP Taster Sessions</h4>
+                                        <h5>September 1, 2021 @ 8:00 am</h5>
+                                    </div>
+                                </span>
+                                <span class="events-image-text">
+                                    <img src="img/avada-nightclub-events-2.jpg" alt="Nightclub event image">
+                                    <div class="events-text">
+                                        <h4>Funky House Rave</h4>
+                                        <h5>September 16, 2021 @ 8:00 am</h5>
+                                    </div>
+                                </span>
+                                <span class="events-image-text">
+                                    <img src="img/avada-nightclub-events-1.jpg" alt="Nightclub event image">
+                                    <div class="events-text">
+                                        <h4>Urban Vibes</h4>
+                                        <h5>September 20, 2021 @ 8:00 am</h5>
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="button buttonevents"><a href="#">RSVP NOW</a></div>
+                        </div>
+                    </div>
                 </section>
+                <!-- 4° SEZIONE BECOME-VIP -->
                 <section id="become-vip">
-
+                    <div class="vip-text">
+                        <h4>BECOME A VIP TONIGHT</h4>
+                        <h1>exclusive vip lounge</h1>
+                    </div>
+                    <div class="button becomevip">
+                        <a href="#">JOIN THE CLUB</a>
+                    </div>
                 </section>
             </main>
-
+            <!-- FOOTER -->
+            <footer>
+                <div class="container">
+                    <div class="box events-left">
+                        <div class="fixed">
+                            <h5>EVENTS</h5>
+                            <ul>
+                                <li v-for="link in linkBottom">
+                                    <img :src="link.img" alt="Dj fusion image">
+                                    <div class="text-box">
+                                        <h4><a href="#">{{link.title}}</a></h4>
+                                        <h6>{{link.subtitle}}</h6>
+                                    </div>
+                                </li>
+                            </ul>
+                            <h4 id="view"><a href="#">View All Events</a></h4>
+                        </div>
+                    </div>
+                    <div class="box address-center">
+                        <div class="fixed">
+                            <img src="img/avada-nightclub-logo-2x-300x99.png" alt="Avada Nightclub logo">
+                            <div class="text-box">
+                                Avada NightClub<br>
+                                100 Night Club Blvd<br>
+                                Beverly Hills<br>
+                                <a href="#">hi@your-domain.com</a><br>
+                                +1 (555) 000 000
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box venues-right">
+                        <div class="fixed">
+                            <h5>VENUES</h5>
+                            <img src="img/avada-nightclub-footer-rooftop.jpg" alt="">
+                            <img src="img/avada-nightclub-footer-dancelounge.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="disclaimer">
+                    © Copyright 2012 - 2020 | Avada Theme by <a href="#">ThemeFusion</a> | All Rights Reserved | Powered by <a href="#">Martina Amore</a>
+                </div>
+                <div class="button-up">
+                    <i class="fas fa-chevron-up"></i>
+                </div>
+            </footer>
         </div>
 
             <script src="js/main.js" charset="utf-8"></script>
