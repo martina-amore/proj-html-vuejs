@@ -7,6 +7,9 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-image: url("../img/avada-nightclub-footer-background-final-2.jpg");
+    background-position: bottom;
+    background-attachment: fixed;
 }
 
 .container {
@@ -23,6 +26,10 @@ h1 {
     color: white;
     font-weight: 500;
     font-size: 56px;
+}
+
+ul {
+    list-style-type: none;
 }
 
 /* HEADER */
@@ -43,10 +50,6 @@ header {
     align-items: center;
 }
 
-.top-navbar ul {
-    list-style-type: none;
-}
-
 .left-navbar li, .right-navbar li {
     display: inline-flex;
 }
@@ -65,6 +68,17 @@ header {
     font-size: 14px;
     color: white;
     letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.top-navbar li a:hover {
+    color: #f53c81;
+}
+
+.left-navbar li:first-of-type a {
+    color: #f53c81;
+    border-bottom: 3px solid #f53c81;
+    padding-bottom: 5px;
 }
 
 .top-navbar img {
@@ -72,20 +86,16 @@ header {
     margin-bottom: 15px;
 }
 
-.right-buttons {
-    position: absolute;
-    right: 0;
-    margin-right: 10px;
-    text-align: center;
-}
-
 .demos, .on-sale {
+    text-align: center;
     width: 65px;
     height: 65px;
     border-radius: 5px;
     background-color: #fefdfe;
-    position: relative;
+    position: fixed;
     color: #33475b;
+    right: 15px;
+    z-index: 3;
 }
 
 .demos {
@@ -371,6 +381,7 @@ header {
     width: 180px;
     margin-top: 10px;
     text-align: center;
+    display: inline-block;
 }
 
 /* 4° SEZIONE BECOME-VIP */
@@ -396,4 +407,116 @@ header {
     margin-top: 10px;
     text-align: center;
     margin-left: 170px;
+}
+
+/* FOOTER */
+footer .container {
+    padding-top: 70px;
+    height: 650px;
+    color: white;
+    display: flex;
+    text-align: center;
+}
+
+footer h5 {
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+footer h6 {
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+footer h4 a {
+    letter-spacing: 0;
+    text-decoration: none;
+    color: #46b1fd;
+    font-size: 23px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#view a {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+footer h4 a:hover {
+    color: white;
+}
+
+.events-left, .address-center,
+.venues-right {
+    width: calc(100% / 3);
+}
+
+.events-left li {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.events-left .text-box {
+    margin-left: 10px;
+}
+
+.address-center img {
+    width: 240px;
+}
+
+.address-center a {
+    text-decoration: none;
+    color: #46b1fd;
+    transition: 0.3s;
+}
+
+.address-center a:hover {
+    color: white;
+}
+
+.address-center .text-box {
+    margin-top: 40px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 25px;
+}
+
+.venues-right img {
+    width: 350px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.disclaimer {
+    text-align: center;
+    color: #2d463f;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 30px;
+}
+
+.disclaimer a {
+    text-decoration: none;
+    color: #546051;
+    transition: 0.3s;
+}
+
+.disclaimer a:hover {
+    text-decoration: none;
+    color: #f53c81;
+}
+
+.button-up {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    color: #33475b;
+    bottom: 40px;
+    right: 40px;
+    z-index: 3;
+    background-color: rgba(50, 50, 50, 0.5);
 }
