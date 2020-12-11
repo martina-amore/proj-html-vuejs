@@ -209,10 +209,12 @@ sup {
     background-size: cover;
 }
 
-#welcome .container {
+#container-welcome {
     padding-top: 270px;
     padding-bottom: 300px;
     text-align: center;
+    width: 85%;
+    margin: 0 auto;
 }
 
 .main-welcome {
@@ -224,7 +226,7 @@ sup {
 }
 
 .welcome-box-text-images p {
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
     margin-top: 15px;
     margin-bottom: 80px;
@@ -358,7 +360,7 @@ sup {
     padding-top: 320px;
     padding-bottom: 340px;
     text-align: center;
-    width: 70%;
+    width: 82%;
 }
 
 #special-events h4 {
@@ -435,7 +437,6 @@ sup {
 /* FOOTER */
 footer .container {
     padding-top: 70px;
-    height: 650px;
     color: white;
     display: flex;
     text-align: center;
@@ -461,13 +462,16 @@ footer h4 a {
     transition: 0.3s;
 }
 
-#view a {
+.events-left h5 a {
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
+    letter-spacing: 0;
+    color: #46b1fd;
+    transition: 0.3s;
 }
 
-footer h4 a:hover {
+footer h4 a:hover, footer h5 a:hover {
     color: white;
 }
 
@@ -506,6 +510,24 @@ footer h4 a:hover {
     line-height: 25px;
 }
 
+.footer-icons {
+    margin-top: 40px;
+}
+
+.footer-icons a:hover {
+    opacity: 0.8;
+}
+
+.footer-icons ul li {
+    display: inline-block;
+}
+
+.footer-icons .fab {
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #bebdbd;
+}
+
 .venues-right img {
     width: 350px;
     margin: 10px;
@@ -518,6 +540,7 @@ footer h4 a:hover {
     font-size: 13px;
     font-family: 'Open Sans', sans-serif;
     padding-bottom: 30px;
+    margin-top: 140px;
 }
 
 .disclaimer a {

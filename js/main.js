@@ -1,5 +1,6 @@
 const app = new Vue ({
     el: ".root",
+    // GENERAZIONE LINK
     data: {
         linkLeft: ["HOME", "THE CLUB", "EVENTS"],
         linkRight: ["JOBS", "NEWS", "CONTACT US"],
