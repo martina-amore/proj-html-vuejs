@@ -103,6 +103,15 @@ header {
     z-index: 3;
 }
 
+.demos .fas {
+    margin-top: 5px;
+    font-size: 1.6rem;
+}
+
+.demos h5 {
+    margin-top: 5px;
+}
+
 .on-sale {
     margin-bottom: 8px;
     margin-top: 70px;
